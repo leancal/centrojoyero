@@ -1,0 +1,37 @@
+[17-Dec-2016 11:12:15 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/joyeria/public_html/Template.php:11) in /home/joyeria/public_html/confirmacionrog.php on line 28
+[19-Dec-2016 13:43:57 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/joyeria/public_html/Template.php:11) in /home/joyeria/public_html/confirmacionrog.php on line 32
+[19-Dec-2016 13:47:50 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/joyeria/public_html/Template.php:11) in /home/joyeria/public_html/confirmacionrog.php on line 33
+[19-Dec-2016 13:52:15 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/joyeria/public_html/Template.php:11) in /home/joyeria/public_html/confirmacionrog.php on line 31
+[21-Dec-2016 08:17:30 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/joyeria/public_html/Template.php:11) in /home/joyeria/public_html/confirmacionrog.php on line 31
+[28-Dec-2016 06:25:07 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/joyeria/public_html/Template.php:11) in /home/joyeria/public_html/confirmacionrog.php on line 31
+[28-Dec-2016 06:25:07 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/joyeria/public_html/Template.php:11) in /home/joyeria/public_html/confirmacionrog.php on line 31
+[29-Dec-2016 12:38:08 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '...' (T_ELLIPSIS), expecting ')' in /home/joyeria/public_html/Pago1.php on line 5
+[29-Dec-2016 12:40:35 America/Los_Angeles] PHP Warning:  require_once(mercadopago.php): failed to open stream: No such file or directory in /home/joyeria/public_html/Pago1.php on line 2
+[29-Dec-2016 12:40:35 America/Los_Angeles] PHP Fatal error:  require_once(): Failed opening required 'mercadopago.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/joyeria/public_html/Pago1.php on line 2
+[29-Dec-2016 12:41:44 America/Los_Angeles] PHP Warning:  require_once(mercadopago.php): failed to open stream: No such file or directory in /home/joyeria/public_html/Pago1.php on line 2
+[29-Dec-2016 12:41:44 America/Los_Angeles] PHP Fatal error:  require_once(): Failed opening required 'mercadopago.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/joyeria/public_html/Pago1.php on line 2
+[29-Dec-2016 13:04:55 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'MercadoPagoException' with message 'error setting certificate verify locations:
+  CAfile: /home/joyeria/public_html/cacert.pem
+  CApath: none' in /home/joyeria/public_html/mercadopago.php:508
+Stack trace:
+#0 /home/joyeria/public_html/mercadopago.php(557): MPRestClient::exec(Array)
+#1 /home/joyeria/public_html/mercadopago.php(67): MPRestClient::post(Array)
+#2 /home/joyeria/public_html/mercadopago.php(210): MP->get_access_token()
+#3 /home/joyeria/public_html/Pago1.php(17): MP->create_preference(Array)
+#4 {main}
+  thrown in /home/joyeria/public_html/mercadopago.php on line 508
+[29-Dec-2016 14:41:55 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'MercadoPagoException' with message 'error setting certificate verify locations:
+  CAfile: /home/joyeria/public_html/cacert.pem
+  CApath: none' in /home/joyeria/public_html/mercadopago.php:508
+Stack trace:
+#0 /home/joyeria/public_html/mercadopago.php(557): MPRestClient::exec(Array)
+#1 /home/joyeria/public_html/mercadopago.php(67): MPRestClient::post(Array)
+#2 /home/joyeria/public_html/mercadopago.php(210): MP->get_access_token()
+#3 /home/joyeria/public_html/Pago1.php(17): MP->create_preference(Array)
+#4 {main}
+  thrown in /home/joyeria/public_html/mercadopago.php on line 508
+[29-Dec-2016 22:39:00 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/joyeria/public_html/Template.php:11) in /home/joyeria/public_html/confirmacionrog.php on line 31
+[29-Dec-2016 22:39:02 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/joyeria/public_html/Template.php:11) in /home/joyeria/public_html/confirmacionrog.php on line 31
+[05-Jan-2017 15:47:33 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/joyeria/public_html/Template.php:11) in /home/joyeria/public_html/confirmacionrog.php on line 31
+[05-Jan-2017 15:47:34 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/joyeria/public_html/Template.php:11) in /home/joyeria/public_html/confirmacionrog.php on line 31
+[15-Nov-2017 18:35:31 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/joyeria/public_html/Template.php:11) in /home/joyeria/public_html/confirmacionrog.php on line 31

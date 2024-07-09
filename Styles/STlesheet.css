@@ -1,0 +1,954 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29/08/2015, 10:20:35 PM
+    Author     : BleuWebs
+http://www.html6.es/t18_colores.html
+*/
+body{
+	font-family: fantasy,tahoma,verdena,arial,sans-serif;
+	    background-color: white;     
+   		color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+      
+  /*  background-color: -webkit-gradient(left top, right top, color-stop(0%, rgba(147,206,222,1)), color-stop(41%, rgba(117,189,209,1)), color-stop(100%, rgba(73,165,191,1)));
+   background:-moz-radial-gradient(center center, ellipse, white 30%, blue 66%, blue 50%);
+     background:-webkit-radial-gradient(center center, ellipse, white 30%, blue 66%, blue 50%);
+      background:-o-radial-gradient(center center, ellipse, white 30%, blue 66%, blue 50%);
+       background:-ms-radial-gradient(center center, ellipse, white 30%, blue 66%, blue 50%);
+       moz-border-radius: 15px 15px 15px 15px;
+//para Safari y Chrome
+-webkit-border-radius: 15px 15px 15px 15px;
+// para Opera 
+border-radius: 15px 15px 15px 15px;
+
+
+background: rgba(76,76,76,1);
+background: -moz-linear-gradient(left, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(17,17,17,1) 73%, rgba(43,43,43,1) 76%, rgba(0,0,0,1) 84%, rgba(44,44,44,1) 87%, rgba(71,71,71,1) 93%, rgba(28,28,28,1) 98%, rgba(19,19,19,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(76,76,76,1)), color-stop(12%, rgba(89,89,89,1)), color-stop(25%, rgba(102,102,102,1)), color-stop(73%, rgba(17,17,17,1)), color-stop(76%, rgba(43,43,43,1)), color-stop(84%, rgba(0,0,0,1)), color-stop(87%, rgba(44,44,44,1)), color-stop(93%, rgba(71,71,71,1)), color-stop(98%, rgba(28,28,28,1)), color-stop(100%, rgba(19,19,19,1)));
+background: -webkit-linear-gradient(left, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(17,17,17,1) 73%, rgba(43,43,43,1) 76%, rgba(0,0,0,1) 84%, rgba(44,44,44,1) 87%, rgba(71,71,71,1) 93%, rgba(28,28,28,1) 98%, rgba(19,19,19,1) 100%);
+background: -o-linear-gradient(left, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(17,17,17,1) 73%, rgba(43,43,43,1) 76%, rgba(0,0,0,1) 84%, rgba(44,44,44,1) 87%, rgba(71,71,71,1) 93%, rgba(28,28,28,1) 98%, rgba(19,19,19,1) 100%);
+background: -ms-linear-gradient(left, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(17,17,17,1) 73%, rgba(43,43,43,1) 76%, rgba(0,0,0,1) 84%, rgba(44,44,44,1) 87%, rgba(71,71,71,1) 93%, rgba(28,28,28,1) 98%, rgba(19,19,19,1) 100%);
+background: linear-gradient(to right, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(17,17,17,1) 73%, rgba(43,43,43,1) 76%, rgba(0,0,0,1) 84%, rgba(44,44,44,1) 87%, rgba(71,71,71,1) 93%, rgba(28,28,28,1) 98%, rgba(19,19,19,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=1 );
+*/
+}
+body p{
+    font-size: 0.8em;
+    line-height: 1.28;
+}
+#wrapper{
+   width: 100%;
+   /* background-color: white;*/
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 10px; /* Adjust padding for better responsiveness     
+   /* border: 2px solid #dedede;*/
+  /*  background-color:#E49E56;
+   moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
+border-radius: 15px 15px 15px 15px; */
+}
+
+#banner{
+   background-image:url(../JoyeriaOro/Fondos/JoyeriaOroFondo.png);
+ 
+     background-repeat: repeat;
+    background-size: cover;
+  /*  border: 2px solid #dedede;*/
+    height: 150px;
+    text-align: center;
+    font-size: 70px;
+/* background:linear-gradient(top, red, gold);
+background:-webkit-linear-gradient(top, red, gold);
+background:-moz-linear-gradient(top, red, gold);
+background:-o-linear-gradient(top, red, gold);
+background:-ms-linear-gradient(top, red, gold);
+
+  background:-moz-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+     background:-webkit-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+      background:-o-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+       background:-ms-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+moz-border-radius: 15px 15px 15px 15px;
+//para Safari y Chrome
+-webkit-border-radius: 15px 15px 15px 15px;
+// para Opera 
+border-radius: 15px 15px 15px 15px;*/
+}
+
+#content_area{
+
+    float:left;
+    width: 100%; /* Change to 100% for full width */
+    margin: 20px 0 20px 0;
+   padding: 10px;
+   /*   opacity: 0.4;
+    filter: alpha(opacity=40);
+   background-color: #E49E56 ;
+      background:-moz-radial-gradient(center center, ellipse, white 5%, peru 66%, black 100%);
+     background:-webkit-radial-gradient(center center, ellipse, white 5%, peru 66%, black 100%);
+      background:-o-radial-gradient(center center, ellipse, white 5%, peru 66%, black 100%);
+       background:-ms-radial-gradient(center center, ellipse, white 5%, peru 66%, black 100%);
+       moz-border-radius: 15px 15px 15px 15px;
+//para Safari y Chrome
+-webkit-border-radius: 15px 15px 15px 15px;
+// para Opera 
+border-radius: 15px 15px 15px 15px;*/
+}
+
+#sidebar{
+    float: right;
+    width: 250px;
+    height: 100%;
+    margin: 20px 10px;
+    padding: 10px;
+ /*   border: 2px solid #E3E3E3;*/
+   /* background-color: #E49E56;
+  background:-moz-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+     background:-webkit-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+      background:-o-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+       background:-ms-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+       moz-border-radius: 15px 15px 15px 15px;
+//para Safari y Chrome
+-webkit-border-radius: 15px 15px 15px 15px;
+// para Opera 
+border-radius: 15px 15px 15px 15px;*/
+}
+
+footer{
+    clear: both;
+    width: auto;
+    height: 40px;
+    padding: 10px;
+  /*  border: 3px solid #E3E3E3;*/
+    text-align: center;
+    color: #00BFFF;
+    font-size: 17px;
+    text-shadow: none; /* 0.1em 0.1em #333; lo de hasta abajo lo hace blurry */
+   /*  background:-moz-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+     background:-webkit-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+      background:-o-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+       background:-ms-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+       moz-border-radius: 15px 15px 15px 15px;
+// para Safari y Chrome
+-webkit-border-radius: 15px 15px 15px 15px;
+// para Opera 
+border-radius: 15px 15px 15px 15px;*/
+}
+
+
+#navigation{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border: 3px solid #E3E3E3;
+    margin-top: 5px;
+    text-shadow: 0.1em 0.1em #333;
+    background-color: #333;
+    color: #fff;
+    
+/*
+     background:-moz-radial-gradient(center center, ellipse, white 5%, peru 66%, black 96%);
+     background:-webkit-radial-gradient(center center, ellipse, white 5%, peru 66%, black 96%);
+      background:-o-radial-gradient(center center, ellipse, white 5%, peru 66%, black 96%);
+       background:-ms-radial-gradient(center center, ellipse, white 5%, peru 66%, black 96%);
+       moz-border-radius: 15px 15px 15px 15px;
+//para Safari y Chrome
+-webkit-border-radius: 15px 15px 15px 15px;
+// para Opera 
+border-radius: 15px 15px 15px 15px;*/
+}
+#nav{
+    list-style: none;
+	display: flex;
+    width: 100%; /* Ensure nav takes full width */
+    justify-content: space-around; /* Space items evenly */
+}
+#nav ul{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    display: none;
+}
+#nav li{
+    font-size: 24px;
+    float: left;
+    position: relative;
+    height: 50px;
+}
+#nav a:link, nav a:active,nav a:visited{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+	padding: 15px 20px; /* Add padding for better click area */
+}
+
+#nav a:hover{
+    color: lightblue;
+}
+
+.imgLeft{
+    float: left;
+    width: 240px;
+    height: 150px;
+    margin: 0px 10px 10px 0;
+    padding: 10px;
+}
+
+.imgRight{
+    float: right;
+    width: 200px;
+    height: 250px;
+    margin: 0px 0 10px 10px;
+    padding: 10px;
+    
+}
+
+.articuloTable{
+    
+    width: 450px;
+    height: 250px;
+    margin: 10px 10px 10px 0;
+    border: 3px solid #E3E3E3;
+    border-radius: 10px;
+    moz-border-radius:10px;
+    background-color: #D7D7D7;
+    
+}
+.articuloTableDer{
+    
+    width: 300px;
+    height: 250px;
+    margin: 10px 10px 10px 0;
+    border: 3px solid #E3E3E3;
+    border-radius: 10px;
+    moz-border-radius:10px;
+    
+}
+.articuloTable tr th, .articuloTable tr td{
+    text-align: left;
+    padding: 0px 5px 0 5px;
+    
+}
+
+.articuloTable img{
+    padding: 0px 10px 10px 10px;
+    height: 150px;
+    width: 150px;
+    
+}
+
+.Contenido_BOLD{
+    font-size: 20;
+    color: #e17009;
+    
+}
+.Contenido_BOLD:hover{
+    font-size: 30;
+    color: #e17009;
+    
+}
+
+.ContactoDesControl{
+    font-size: 20;
+
+    
+}
+
+.Titulos {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bolder;
+	color: #1E3A52;
+}
+.Contenido {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.Titulo_MENU {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #CCCCCC;
+	background-color: #006599;
+	padding: 5px;
+}
+
+.BTN {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #006699;
+	font-weight: bold;
+}
+.Contenido_BTN {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #006699;
+	text-decoration: underline;
+}
+.Contenido_BOLD {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #1E3A52;
+}
+.Contenido_chico {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #292929;
+}
+.Contenido_BOLD_chico {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	color: #1E3A52;
+}
+.Dat_chico {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+		color: #292929;
+}	
+.Rojo_Bold {
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bolder;
+	color: #FF0000;
+}
+.Rojo_Contenido {
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FF0000;
+}
+.Rojo_Contenido_smaller {
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FF0000;
+}
+.Rojo_Contenido_BTN {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bolder;
+	color: #FF0000;
+	text-decoration: underline;
+}
+.Blanco_Contenido {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+.Contenido_BOLD_Contest {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	font-weight: bolder;
+	color: #1E3A52;
+}
+
+li figure {
+        position: relative;
+        overflow: hidden;
+    }
+
+    li img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    li:hover img {
+        transform: scale(1.1); /* Increase the scale factor for a stronger zoom effect */
+    }
+
+    .image-frame {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid #B2B2B2; /* Adjust the border properties as needed */
+        box-sizing: border-box;
+    }
+	/* Center the li element's content */
+			li {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center; /* Center text within the li element */
+			}
+
+			/* Center the figure element within the li */
+			li figure {
+				display: inline-block;
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			/* Center the figcaption's text */
+			figcaption h3 {
+				text-align: center;
+			}
+
+			/* Center the image within the figure */
+			li figure img {
+				display: block;
+				margin: 0 auto;
+			}
+
+	.modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+			z-index: 9999; /* Ensure modal is above other content */
+        }
+
+        .modal img {
+            max-width: 80%;
+            max-height: 80%;
+            border: 4px solid #fff;
+            box-sizing: border-box;
+			object-fit: contain;  /* Added to ensure image fits within the modal without stretching */
+}
+		.modal.white-background {
+    background-color: rgba(255, 255, 255, 0.9); /* White background for modal */
+}	
+
+	.modal.black-background {
+    background-color: rgba(0, 0, 0, 0.9); /* Black background for modal */
+}
+
+        }
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    /* Styles for screens smaller than 600px (e.g., mobile devices) */
+    .grid-gallery {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .grid-wrap {
+        margin: 5px; /* Adjust margin for smaller screens */
+    }
+
+    .grid {
+        column-gap: 5px; /* Adjust column gap for smaller screens */
+    }
+
+    .grid li {
+        margin-bottom: 10px; /* Adjust margin between items for smaller screens */
+    }
+
+    .modal-content {
+        max-width: 90%; /* Adjust max-width for the modal content on smaller screens */
+    }
+
+    /* Add more responsive styles as needed */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for screens between 601px and 1024px (e.g., tablets) */
+    .grid-gallery {
+        padding: 20px; /* Adjust padding for tablets */
+    }
+
+    .grid-wrap {
+        margin: 10px; /* Adjust margin for tablets */
+    }
+
+    .grid {
+        column-gap: 10px; /* Adjust column gap for tablets */
+    }
+
+    .grid li {
+        margin-bottom: 20px; /* Adjust margin between items for tablets */
+    }
+
+    .modal-content {
+        max-width: 80%; /* Adjust max-width for the modal content on tablets */
+    }
+
+    /* Add more responsive styles as needed */
+}
+
+/* Additional styles for larger screens (e.g., monitors) */
+@media only screen and (min-width: 1025px) {
+    .grid-gallery {
+        padding: 30px; /* Adjust padding for larger screens */
+    }
+
+    .grid-wrap {
+        margin: 15px; /* Adjust margin for larger screens */
+    }
+
+    .grid {
+        column-gap: 15px; /* Adjust column gap for larger screens */
+    }
+
+    .grid li {
+        margin-bottom: 30px; /* Adjust margin between items for larger screens */
+    }
+
+    .modal-content {
+        max-width: 70%; /* Adjust max-width for the modal content on larger screens */
+    }
+
+    /* Add more responsive styles as needed */
+}
+    
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .wrapper {
+            width: 100%;
+            padding: 20px;
+        }
+
+        header.Joyeriaoro {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            color: #fff;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        nav {
+            flex: 1;
+            max-width: 100%; /* Adjust the width as needed */
+            margin-top: 20px;
+        }
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+
+        }
+
+        .mega-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        padding: 20px;
+        box-sizing: border-box;
+        flex-direction: row; /* Display horizontally */
+        }
+
+        .mega-menu img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        
+
+        .Contenido {
+            flex: 1;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+        /* ... Existing media query styles ... */
+
+        .menu-icon {
+            display: block;
+        }
+
+        .mega-menu {
+            flex-direction: column; /* Display vertically in mobile view */
+        }
+    }
+/* Navbar styles */
+.navbar {
+    position: relative;
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Change the background color as needed */
+    padding: 15px;
+}
+
+
+/* Mega menu styles */
+.mega-menu {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Change the background color as needed */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	color: #fff; /* Change the text color to white */
+
+}
+/* Mega menu item styles */
+.mega-menu p {
+    margin: 0;
+    padding: 5px 0;
+    transition: all 0.3s; /* Add smooth transition effect */
+}
+
+.mega-menu p:hover {
+    font-weight: bold; /* Make the text bold on hover */
+    background-color: #333; /* Highlight background color on hover */
+	padding: 10px; /* Adjust padding for the entire space */
+
+}
+
+        /* Adjustments for smaller screens */
+        @media screen and (max-width: 768px) {
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Arial', sans-serif;
+            }
+
+            .wrapper {
+                padding: 10px; /* Adjust padding for better responsiveness */
+            }
+
+            header.Joyeriaoro {
+                padding: 10px;
+                font-size: 24px; /* Adjust font size for better responsiveness */
+            }
+
+            nav {
+                max-width: 100%;
+                margin-top: 10px; /* Adjust margin for better responsiveness */
+            }
+
+           
+            .menu-icon {
+                display: block;
+                font-size: 24px; /* Adjust font size for better visibility */
+            }
+
+            .main {
+                flex-direction: column; /* Stack main content and menu on smaller screens */
+            }
+
+            .Contenido {
+                max-width: 100%; /* Adjust content width for better responsiveness */
+                margin-top: 10px; /* Adjust margin for better spacing */
+            }
+
+            footer {
+                padding: 10px;
+                font-size: 16px; /* Adjust font size for better visibility f */
+            }
+        }
+/* Add this CSS for the burger menu */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Navbar styles */
+.navbar {
+    position: relative;     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+}
+
+
+/* Mega menu styles */
+.mega-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+
+/* Mega menu item styles */
+.mega-menu p {
+    margin: 0;
+    padding: 5px 0;
+    transition: all 0.3s;
+}
+
+.mega-menu p:hover {
+    font-weight: bold;
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 10px;
+    }
+
+    header.Joyeriaoro {
+        padding: 10px;
+        font-size: 24px;
+    }
+
+    nav {
+        max-width: 100%;
+        margin-top: 10px;
+        display: none; /* Hide the menu by default on smaller screens */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .Contenido {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+ /* Default styles for the image */
+    .image-container img {
+        max-width: 100%; /* Ensure images don't exceed their container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust image size for tablets */
+    @media (min-width: 768px) {
+        .image-container img {
+            max-width: 50%;
+        }
+    }
+
+    /* Adjust image size for larger screens */
+    @media (min-width: 1024px) {
+        .image-container img {
+            max-width: 30%;
+        }
+    }
+
+    /* Modal styles */
+    .modal-content {
+        max-width: 100%; /* Ensure modal image fits within the viewport */
+        max-height: 80vh; /* Limit modal image height to 80% of the viewport height */
+    }
+
+/* MegaMenuChat */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        text-align: center;
+    }
+}
+/* General styles for the menu */
+.cbp-hsmenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cbp-hsmenu > li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.cbp-hsmenu > li > a {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 25px;
+    letter-spacing: 1px;
+    color: blue; /* New text color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    font-size: 18px; /* New text size */
+}
+
+.cbp-hsmenu > li:hover .mega-menu {
+    display: block;
+    flex-direction: column;
+}
+
+/* Navbar links styles */
+.cbp-hsmenu li {
+    margin-right: 20px; /* Adjust the spacing between menu items as needed */
+}
+
+.cbp-hsmenu a {
+    text-decoration: none;
+    color: #fff; /* Change the text color as needed */
+    font-weight: bold;
+    font-size: 16px; /* Adjust the font size as needed */
+    transition: color 0.3s ease;
+}
+
+.cbp-hsmenu a:hover {
+    color: #000000; /* Change the hover color as needed */
+}
+
+/* Mega menu styles */
+.mega-menu {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Change the background color as needed */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff; /* Change the text color to white */
+}
+
+.cbp-hsmenu li:hover .mega-menu {
+    display: block;
+    top: 100%;
+    left: 0;
+}
+
+/* Mega menu item styles */
+.mega-menu p {
+    margin: 0;
+    padding: 5px 0;
+    transition: all 0.3s; /* Add smooth transition effect */
+}
+
+.mega-menu p:hover {
+    font-weight: bold; /* Make the text bold on hover */
+    background-color: #333; /* Highlight background color on hover */
+    padding: 10px; /* Adjust padding for the entire space */
+}
+
+.cbp-hsmenu li:hover .mega-menu {
+    background-color: #333; /* Highlight background color when mega-menu is open */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .cbp-hsmenu {
+        flex-direction: column; /* Display menu items vertically on smaller screens */
+        align-items: center; /* Center-align menu items */
+    }
+
+    .cbp-hsmenu li {
+        margin-right: 0; /* Remove margin between menu items on smaller screens */
+        margin-bottom: 10px; /* Add margin below each menu item for better spacing */
+    }
+
+    .cbp-hsmenu a {
+        padding: 15px 0; /* Adjust padding for better spacing */
+        text-align: center; /* Center-align text in menu items */
+    }
+}

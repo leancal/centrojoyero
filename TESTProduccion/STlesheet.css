@@ -1,0 +1,395 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29/08/2015, 10:20:35 PM
+    Author     : fidel
+http://www.html6.es/t18_colores.html
+*/
+body{
+    font-family: fantasy,tahoma,verdena,arial,sans-serif;
+    
+     background-color: black;
+      background-image:url(../JoyeriaOro/Fondos/location-map-equirectangular.png);
+   color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+     /*  -webkit-background-size: cover; 
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;*/
+      
+  /*  background-color: -webkit-gradient(left top, right top, color-stop(0%, rgba(147,206,222,1)), color-stop(41%, rgba(117,189,209,1)), color-stop(100%, rgba(73,165,191,1)));
+   background:-moz-radial-gradient(center center, ellipse, white 30%, blue 66%, blue 50%);
+     background:-webkit-radial-gradient(center center, ellipse, white 30%, blue 66%, blue 50%);
+      background:-o-radial-gradient(center center, ellipse, white 30%, blue 66%, blue 50%);
+       background:-ms-radial-gradient(center center, ellipse, white 30%, blue 66%, blue 50%);
+       moz-border-radius: 15px 15px 15px 15px;
+//para Safari y Chrome
+-webkit-border-radius: 15px 15px 15px 15px;
+// para Opera 
+border-radius: 15px 15px 15px 15px;
+
+
+background: rgba(76,76,76,1);
+background: -moz-linear-gradient(left, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(17,17,17,1) 73%, rgba(43,43,43,1) 76%, rgba(0,0,0,1) 84%, rgba(44,44,44,1) 87%, rgba(71,71,71,1) 93%, rgba(28,28,28,1) 98%, rgba(19,19,19,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(76,76,76,1)), color-stop(12%, rgba(89,89,89,1)), color-stop(25%, rgba(102,102,102,1)), color-stop(73%, rgba(17,17,17,1)), color-stop(76%, rgba(43,43,43,1)), color-stop(84%, rgba(0,0,0,1)), color-stop(87%, rgba(44,44,44,1)), color-stop(93%, rgba(71,71,71,1)), color-stop(98%, rgba(28,28,28,1)), color-stop(100%, rgba(19,19,19,1)));
+background: -webkit-linear-gradient(left, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(17,17,17,1) 73%, rgba(43,43,43,1) 76%, rgba(0,0,0,1) 84%, rgba(44,44,44,1) 87%, rgba(71,71,71,1) 93%, rgba(28,28,28,1) 98%, rgba(19,19,19,1) 100%);
+background: -o-linear-gradient(left, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(17,17,17,1) 73%, rgba(43,43,43,1) 76%, rgba(0,0,0,1) 84%, rgba(44,44,44,1) 87%, rgba(71,71,71,1) 93%, rgba(28,28,28,1) 98%, rgba(19,19,19,1) 100%);
+background: -ms-linear-gradient(left, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(17,17,17,1) 73%, rgba(43,43,43,1) 76%, rgba(0,0,0,1) 84%, rgba(44,44,44,1) 87%, rgba(71,71,71,1) 93%, rgba(28,28,28,1) 98%, rgba(19,19,19,1) 100%);
+background: linear-gradient(to right, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(17,17,17,1) 73%, rgba(43,43,43,1) 76%, rgba(0,0,0,1) 84%, rgba(44,44,44,1) 87%, rgba(71,71,71,1) 93%, rgba(28,28,28,1) 98%, rgba(19,19,19,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=1 );
+*/
+}
+body p{
+    font-size: 0.8em;
+    line-height: 1.28;
+}
+#wrapper{
+    width: 90%;
+   /* background-color: white;*/
+    margin: 0 auto;
+  /*   padding: 10px;
+    
+   border: 2px solid #dedede;*/
+  /*  background-color:#E49E56;
+   moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
+border-radius: 15px 15px 15px 15px; */
+}
+
+#banner{
+    
+   background-image:url(../JoyeriaOro/Fondos/.jpg);
+ 
+     background-repeat: no-repeat;
+    background-size: cover;
+  /*  border: 2px solid #dedede;*/
+    height: 150px;
+    text-align: center;
+    font-size: 70px;
+/* background:linear-gradient(top, red, gold);
+background:-webkit-linear-gradient(top, red, gold);
+background:-moz-linear-gradient(top, red, gold);
+background:-o-linear-gradient(top, red, gold);
+background:-ms-linear-gradient(top, red, gold);
+
+  background:-moz-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+     background:-webkit-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+      background:-o-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+       background:-ms-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+moz-border-radius: 15px 15px 15px 15px;
+//para Safari y Chrome
+-webkit-border-radius: 15px 15px 15px 15px;
+// para Opera 
+border-radius: 15px 15px 15px 15px;*/
+}
+.Joyeriaoro{
+     width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 27px;
+}
+#content_area{
+   width: 80%;
+    margin: 0 auto;
+   /* float:left;
+    width: 1200px;
+    margin: 20px 0 20px 0;
+   padding: 10px;/
+   /*   opacity: 0.4;
+    filter: alpha(opacity=40);
+   background-color: #E49E56 ;
+      background:-moz-radial-gradient(center center, ellipse, white 5%, peru 66%, black 100%);
+     background:-webkit-radial-gradient(center center, ellipse, white 5%, peru 66%, black 100%);
+      background:-o-radial-gradient(center center, ellipse, white 5%, peru 66%, black 100%);
+       background:-ms-radial-gradient(center center, ellipse, white 5%, peru 66%, black 100%);
+       moz-border-radius: 15px 15px 15px 15px;
+//para Safari y Chrome
+-webkit-border-radius: 15px 15px 15px 15px;
+// para Opera 
+border-radius: 15px 15px 15px 15px;*/
+}
+
+#sidebar{
+    float: right;
+    width: 250px;
+    height: 100%;
+    margin: 20px 10px;
+    padding: 10px;
+ /*   border: 2px solid #E3E3E3;*/
+   /* background-color: #E49E56;
+  background:-moz-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+     background:-webkit-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+      background:-o-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+       background:-ms-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+       moz-border-radius: 15px 15px 15px 15px;
+//para Safari y Chrome
+-webkit-border-radius: 15px 15px 15px 15px;
+// para Opera 
+border-radius: 15px 15px 15px 15px;*/
+}
+.main{
+    
+   width: 1020px; 
+   /* background-color: white;*/
+    margin: 0 auto;
+}
+footer{
+    clear: both;
+    width: auto;
+    height: 40px;
+    padding: 10px;
+  /*  border: 3px solid #E3E3E3;*/
+    text-align: center;
+   // color:  #00BFFF;
+    font-size: 17px;
+   // text-shadow: 0.1em 0.1em #333;
+   /*  background:-moz-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+     background:-webkit-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+      background:-o-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+       background:-ms-radial-gradient(center center, ellipse, white 25%, peru 66%, black 96%);
+       moz-border-radius: 15px 15px 15px 15px;
+// para Safari y Chrome
+-webkit-border-radius: 15px 15px 15px 15px;
+// para Opera 
+border-radius: 15px 15px 15px 15px;*/
+}
+
+
+#navigation{
+
+    height: 60px;
+    border: 3px solid #E3E3E3;
+    margin-top: 5px;
+    text-shadow: 0.1em 0.1em #333;
+/*
+     background:-moz-radial-gradient(center center, ellipse, white 5%, peru 66%, black 96%);
+     background:-webkit-radial-gradient(center center, ellipse, white 5%, peru 66%, black 96%);
+      background:-o-radial-gradient(center center, ellipse, white 5%, peru 66%, black 96%);
+       background:-ms-radial-gradient(center center, ellipse, white 5%, peru 66%, black 96%);
+       moz-border-radius: 15px 15px 15px 15px;
+//para Safari y Chrome
+-webkit-border-radius: 15px 15px 15px 15px;
+// para Opera 
+border-radius: 15px 15px 15px 15px;*/
+}
+#nav{
+     list-style: none;
+}
+#nav ul{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    display: none;
+}
+#nav li{
+    font-size: 24px;
+    float: left;
+    position: relative;
+    width: 180px;
+    height: 50px;
+}
+#nav a:link, nav a:active,nav a:visited{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav a:hover{
+    color: lightblue;
+}
+
+.imgLeft{
+    float: left;
+    width: 240px;
+    height: 150px;
+    margin: 0px 10px 10px 0;
+    padding: 10px;
+}
+
+.imgRight{
+    float: right;
+    width: 200px;
+    height: 250px;
+    margin: 0px 0 10px 10px;
+    padding: 10px;
+    
+}
+
+.articuloTable{
+    
+    width: 450px;
+    height: 250px;
+    margin: 10px 10px 10px 0;
+    border: 3px solid #E3E3E3;
+    border-radius: 10px;
+    moz-border-radius:10px;
+    background-color: #D7D7D7;
+    
+}
+.articuloTableDer{
+    
+    width: 300px;
+    height: 250px;
+    margin: 10px 10px 10px 0;
+    border: 3px solid #E3E3E3;
+    border-radius: 10px;
+    moz-border-radius:10px;
+    
+}
+.articuloTable tr th, .articuloTable tr td{
+    text-align: left;
+    padding: 0px 5px 0 5px;
+    
+}
+
+.articuloTable img{
+    padding: 0px 10px 10px 10px;
+    height: 150px;
+    width: 150px;
+    
+}
+
+.Contenido_BOLD{
+    font-size: 20;
+    color: #e17009;
+    
+}
+.Contenido_BOLD:hover{
+   /* font-size: 30;
+    color: #e17009;*/
+    
+}
+
+.ContactoDesControl{
+    font-size: 20;
+
+    
+}
+
+
+.Titulos {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bolder;
+	color: #1E3A52;
+}
+.Contenido {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.Titulo_MENU {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #CCCCCC;
+	background-color: #006599;
+	padding: 5px;
+}
+
+.BTN {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #006699;
+	font-weight: bold;
+}
+.Contenido_BTN {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #006699;
+	text-decoration: underline;
+}
+.Contenido_BOLD {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #1E3A52;
+}
+.Contenido_chico {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #292929;
+}
+.Contenido_BOLD_chico {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	color: #1E3A52;
+}
+.Dat_chico {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+		color: #292929;
+}	
+.Rojo_Bold {
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bolder;
+	color: #FF0000;
+}
+.Rojo_Contenido {
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FF0000;
+}
+.Rojo_Contenido_smaller {
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FF0000;
+}
+.Rojo_Contenido_BTN {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bolder;
+	color: #FF0000;
+	text-decoration: underline;
+}
+.Blanco_Contenido {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+.Contenido_BOLD_Contest {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	font-weight: bolder;
+	color: #1E3A52;
+}
+h2{
+    
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: white;
+    font-weight: normal;
+}
+
+h3{
+    
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: white;
+font-weight: normal;
+    
+}
+h4{
+    
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: white;
+
+    
+}
+.csslink{
+    
+      font-family: Geneva, Arial, Helvetica, sans-serif;
+	//font-size: 12px;
+	//color: #1E3A52;
+           color: #02639d;
+}

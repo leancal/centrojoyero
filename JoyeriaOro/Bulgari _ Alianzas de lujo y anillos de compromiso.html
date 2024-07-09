@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://www.bulgari.com/es-br/bridal -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+<title>Bulgari | Alianzas de lujo y anillos de compromiso</title>
+<meta name="description" content="Descubra la colección Bridal de Bulgari: una amplia selección de anillos de compromiso, alianzas y mucho más.">
+<meta name="keywords" content="BVLGARI, Bulgari">
+<meta name="google-site-verification" content="08fmhuKheBlc4hUatk7Q8tfxfTPD4dr-MbkB69A_RSw"><meta name="msvalidate.01" content="1D90A7AD51054705E32A4007DE35E084"><meta name="yandex-verification" content="519abc55292c9e2c"><meta name="baidu-site-verification" content="SpHeMXDgeJ"><meta name="360-site-verification" content="55f2f0733c9d8eea0d289c522ab5d1f5"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<meta property="og:title" content="Bulgari | Alianzas de lujo y anillos de compromiso">
+<meta property="og:url" content="http://www.bulgari.com/es-br/bridal">
+ 
+<meta property="og:description" content="Descubra la colección Bridal de Bulgari: una amplia selección de anillos de compromiso, alianzas y mucho más.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://www.bulgari.com/skin/frontend/enterprise/bulgari/images/layout/logo/logo-large.jpg">
+
+<link rel="shortcut icon" href="http://www.bulgari.com/favicon.ico">
+
+<script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+</script>
+
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/eluminate.js"></script>
+<script type="text/javascript">
+    
+    var clientID = '51370000';
+    var clientManaged = true;
+    var dataCollectionDomain = 'data.de.coremetrics.com';
+    var siteDomain = 'bulgari.com';
+    var websiteId = 'br';
+    var dataInteractHP = {};
+    
+    Object.size = function(obj) {
+    var size = 0, key;
+    for (key in obj) {
+        if (obj.hasOwnProperty(key)) size++;
+    }
+    return size;
+};
+
+    
+    cmSetClientID(clientID+'|'+websiteId, clientManaged, dataCollectionDomain, siteDomain);
+    if (websiteId=="us"){
+        cmSetupOther({ "cm_currencyCode":"USD","cm_JSFCoreCookieExpireSeconds":"31536000","cm_FormPageID":true});
+    } else if (websiteId=="jp"){
+        cmSetupOther({ "cm_currencyCode":"JPY","cm_JSFCoreCookieExpireSeconds":"31536000","cm_FormPageID":true});
+    }
+    
+    cmSetupOther({"cm_JSFCoreCookieExpireSeconds":"31536000","cm_FormPageID":true});        
+    var rootLevel = '';
+    var pageId = 'CMS Page: bridal';
+    if(pageId && pageId!="Careers"){
+        if(rootLevel!=""){
+            cmCreatePageviewTag(websiteId + ': ' + pageId, websiteId + ': ' + rootLevel);
+        }
+        else if ("Cms"!="customer-account" || pageId=="my account" || pageId=="login"){
+            cmCreatePageviewTag(websiteId + ': ' + pageId, websiteId + ': ' + 'Cms');
+        }
+    }
+    
+    var cartItems = null;
+    if (cartItems) {
+        $j.each(cartItems, function(key, value){
+            var family = (value['family'])?value['family']:"";
+            var material = (value['material'])?value['material']:"";
+            var color = (value['color'])?value['color']:"";
+            var bu = (value['bu'])?value['bu']:"";
+            var sign = (value['sign'])?value['sign']:"";
+            var aeLine = (value['aeLine'])?value['aeLine']:"";
+            
+            cmCreateShopAction5Tag(value['sku'], value['name'], Math.round(value['qty']), Math.round(value['price'],2), websiteId + ': ' + bu, sign + "-_-" + bu + "-_-" + family + "-_-" + aeLine + "-_-" + material + "-_-" + color);
+        })
+        cmDisplayShops();
+    }
+    
+    var customerId = '';   
+    var orderItems = null;
+    if (orderItems) {
+        var orderId = '';
+        var orderTotal = '';
+        var orderShippingAmount = '';
+        var orderCity = '';
+        var orderRegion = '';
+        var orderZip = '';
+        
+        $j.each(orderItems, function(key, value){
+            var family = (value['family'])?value['family']:"";
+            var material = (value['material'])?value['material']:"";
+            var color = (value['color'])?value['color']:"";
+            var bu = (value['bu'])?value['bu']:"";
+            var sign = (value['sign'])?value['sign']:"";
+            var aeLine = (value['aeLine'])?value['aeLine']:"";
+            
+            cmCreateShopAction9Tag(value['sku'], value['name'], Math.round(value['qty']), Math.round(value['price'],2), customerId, orderId, Math.round(orderTotal,2), websiteId + ': ' + bu, sign + "-_-" + bu + "-_-" + family + "-_-" + aeLine + "-_-" + material + "-_-" + color);
+        })
+        cmDisplayShops();
+        cmCreateOrderTag(orderId, Math.round(orderTotal,2), Math.round(orderShippingAmount,2), customerId, orderCity, orderRegion, orderZip);
+        
+        var customerEmail = '';
+        var customerCity = '';
+        var customerRegion = '';
+        var customerPostalCode = '';
+        var customerCountry = '';
+        
+                    
+        var customerCrmId = '';
+        var regType = '';
+        
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                cmCreateRegistrationTag (customerId, customerEmail, customerCity, customerRegion, customerPostalCode, customerCountry, customerCrmId + "-_-" + regType + "-_-" + position.coords.latitude + ";" + position.coords.longitude);     
+            },function(){
+                cmCreateRegistrationTag (customerId, customerEmail, customerCity, customerRegion, customerPostalCode, customerCountry, customerCrmId + "-_-" + regType);          
+            });
+        }
+    }
+    
+</script><script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/head.js"></script><script language="javascript" type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/51370000.js"></script><script language="javascript" type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/dispatcher-v3.js"></script><script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/yahoo-min.js" type="text/javascript"></script><script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cp-v3.js" type="text/javascript"></script><script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/json-min.js" type="text/javascript"></script>
+        
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/prototype.js"></script>
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/ccard.js"></script>
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/validation.js"></script>
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/builder.js"></script>
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/effects.js"></script>
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/dragdrop.js"></script>
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/controls.js"></script>
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/slider.js"></script>
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/js.js"></script>
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/form.js"></script>
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/menu.js"></script>
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/translate.js"></script>
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cookies.js"></script>
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/scripts.js"></script>
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/catalogevent.js"></script>
+<script type="text/javascript" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/wishlist.js"></script>
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.bulgari.com/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://www.bulgari.com/skin/frontend/enterprise/default/js/iehover-fix.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/';
+Mage.Cookies.domain   = '.www.bulgari.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["IE","PA","HK","MO"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"Please select an option.":"Por favor, seleccione una opci\u00f3n.","This is a required field.":"Este campo es obligatorio.","The From Date value should be less than or equal to the To Date value.":"El valor de la Fecha de Inicio debe ser igual o inferior al de la Fecha de Finalizaci\u00f3n.","Please enter a valid email address. For example johndoe@domain.com.":"Introduzca un correo electr\u00f3nico v\u00e1lido. Por ejemplo johndoe@domain.com.","Please enter 8 or more characters. Leading or trailing spaces will be ignored.":"Por favor, introduzca 8 o m\u00e1s caracteres. Los espacios en blanco no se tendr\u00e1n en cuenta.","Please make sure your passwords match.":"Compruebe que las contrase\u00f1as sean id\u00e9nticas.","Please enter a valid URL. Protocol is required (http:\/\/, https:\/\/ or ftp:\/\/)":"Por favor, introduzca una URL v\u00e1lida. El protocolo http:\/\/, https:\/\/ o ftp:\/\/ es obligatorio.","Please select one of the options.":"Por favor, seleccione una de las opciones.","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"lease enter 6 or more characters. Leading or trailing spaces will be ignored.","Please wait, loading...":"Por favor, espere: se est\u00e1 recuperando la informaci\u00f3n.","Add Products By SKU":"A\u00f1adir Productos Por SKU","Please choose to register or to checkout as a guest":"Seleccione el registro o la realizaci\u00f3n de pedido como invitado.","Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.":"En este momento no es posible realizar su pedido, dado que no dispone de ning\u00fan m\u00e9todo de env\u00edo. Efect\u00fae los cambios necesarios en su direcci\u00f3n de env\u00edo.","Please specify payment method.":"Indique el m\u00e9todo de pago.","Your order cannot be completed at this time as there is no payment methods available for it.":"En este momento no es posible realizar su pedido, dado que no dispone de ning\u00fan m\u00e9todo de pago.","Wishlist Name":"Nombre de la Lista de deseos","Save":"Guardar","Cancel":"Cancelar","Make This Wishlist Public":"Hacer P\u00fablica Esta Lista de Deseos","Error happened during wishlist creation. Try again later":"Se produjo un error durante la creaci\u00f3n de la lista de deseos. Int\u00e9ntelo de nuevo m\u00e1s tarde","Create New Wishlist":"Crear Nueva Lista de Deseos","Edit Wishlist":"Editar Lista de Deseos","Select items to move":"Seleccionar art\u00edculos para moverlos","Select items to copy":"Seleccionar art\u00edculos para copiarlos","Add to:":"A\u00f1adir a:"});
+        //]]></script>
+<script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/modernizr-2.7.1.min.js"></script>        <link rel="stylesheet" href="http://www.bulgari.com/skin/frontend/enterprise/bulgari/css/main.css?065239">
+        <link rel="stylesheet" href="http://www.bulgari.com/skin/frontend/enterprise/bulgari/css/update.css?065239">
+        <link rel="stylesheet" href="http://www.bulgari.com/skin/frontend/enterprise/bulgari/css/welcome.css?065239">
+                    </head>
+    <body itemscope="" itemtype="http://schema.org/WebPage" class="cms-page-view cms-bridal">
+        
+                        
+        
+<header class="main-header" role="banner">
+    <!--    MOBILE    -->
+    <a href="http://www.bulgari.com/es-br/bridal#" class="nav-site-mobile">Abrir la exploración del sitio</a>
+        <!--    MOBILE    -->
+    <a href="http://www.bulgari.com/es-br" class="logo" alt="BVLGARI" title="BVLGARI">
+        <h1>BVLGARI</h1>
+    </a>
+    <nav class="user-nav">
+        <ul>
+                        <li><a href="http://www.bulgari.com/es-br/storelocator/">Localizador de tiendas</a></li>
+                                        <li><a href="https://www.bulgari.com/es-br/customer/account/login/" class="login">Registrarse</a></li>
+                <!--<li><a href="" id="header-login-btn" class="popin-bt"></a></li>-->
+                        <!--{WISHLISTLINKS_152f18df4212144712c042c9fabf2b75}--><li class=" last"><a href="https://www.bulgari.com/es-br/wishlist/" title="Mi Lista de Deseos">Mi Lista de Deseos</a></li>
+<!--/{WISHLISTLINKS_152f18df4212144712c042c9fabf2b75}-->                                </ul> 
+    </nav>
+    <span></span>
+</header>
+<nav class="site-nav fixed">
+    <a href="http://www.bulgari.com/" class="home">Inicio</a>
+    <ul>
+                                                            <li><a href="http://www.bulgari.com/es-br/bridal#" data-section="jewelry" title="JOYERÍA">JOYERÍA</a></li>
+                                                                        <li><a href="http://www.bulgari.com/es-br/bridal#" data-section="watches" title="RELOJERÍA">RELOJERÍA</a></li>
+                                                                        <li><a href="http://www.bulgari.com/es-br/bridal#" data-section="Accessories" title="ACCESORIOS">Accesorios</a></li>
+                                                                        <li><a href="http://www.bulgari.com/es-br/bridal#" data-section="threecolumns" title="FRAGANCIAS">FRAGANCIAS</a></li>
+                                                                                                <li><a href="http://www.bulgari.com/es-br/bridal#" data-section="gifts" title="Regalos">Regalos</a></li>
+                                                                                                                        <li><a href="http://www.bulgari.com/es-br/news" class="News" title="NOTICIAS">NOTICIAS</a></li>
+                                                                        <li><a href="http://www.bulgari.com/es-br/bridal#" data-section="the-maison-2" title="LA FIRMA">LA FIRMA</a></li>
+                                                                        <li><a href="http://www.bulgarihotels.com/" class="hotel" title="" target="_blank">HOTELES</a></li>
+                                                    <li class="screen"><a href="http://www.bulgari.com/es-br/bridal#" class="search" data-section="search">Búsqueda</a></li>
+
+        <!--    MOBILE    -->
+        
+        <li class="mobile"><a href="http://www.bulgari.com/es-br/storelocator/" class="store-mobile">Localizador de tiendas</a></li>
+                    <li class="mobile"><a href="https://www.bulgari.com/es-br/customer/account/login/" class="login-mobile">Registrarse</a></li>
+            <li class="mobile"><a href="http://www.bulgari.com/es-br/bridal#" class="wish-mobile">Mi lista de deseos</a></li>
+                <li class="mobile">
+            <div class="input">
+                <form action="http://www.bulgari.com/es-br/catalogsearch/result/" method="GET">
+                    <input type="text" id="search" placeholder="Búsqueda de productos por símbolo, código o descripción" name="q">
+                </form>
+            </div>
+        </li>
+        <!--    MOBILE    -->
+    </ul>
+</nav>
+<nav class="main-nav fixed">
+    <ul>
+                                                                                             <li class="jewelry " style="display: none;">
+                    <aside>
+                        <ul>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/jewels/new-launches">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_1_2_v_3.jpg" alt="NOVEDADES" title="NOVEDADES">
+                                    </figure>
+                                    <span>NOVEDADES</span>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/Bulgari _ Alianzas de lujo y anillos de compromiso.html">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_2_2_v_3.jpg" alt="Bridal" title="Bridal">
+                                    </figure>
+                                    <span>Bridal</span>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://bit.ly/PT_Jew_Cat">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_3_2_v_4.jpg" alt="Jewels Catalogue" title="Jewels Catalogue">
+                                    </figure>
+                                    <span>Jewels Catalogue</span>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/high-jewellery">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_4_2_v_5.jpg" alt="Alta joyería" title="Alta joyería">
+                                    </figure>
+                                    <span>Alta joyería</span>
+                                </a>
+                            </li>
+                                                    </ul>
+                    </aside>
+                                            <ul>
+                            <li>
+                                <strong>CATEGORÍA</strong>
+                                <ul>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&product_detail_one=228" title="ANILLOS">ANILLOS</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&product_detail_one=235" title="Alianza">Alianza</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&product_detail_one=218" title="COLLARES">COLLARES</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&product_detail_one=216" title="PULSERAS">PULSERAS</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&product_detail_one=221" title="PENDIENTES">PENDIENTES</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&product_detail_one=226" title="COLGANTES">COLGANTES</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&product_detail_one=596" title="Cadenas">Cadenas</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&product_detail_one=220" title="Gemelos">Gemelos</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&product_detail_one=124&&product_detail_one=220&product_detail_one=399" title="OTROS">OTROS</a></li>
+                                                                    </ul>
+                            </li>
+                                                        <li>
+                                <strong>COLECCIÓN</strong>
+                                <ul>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?sign=18&root_level=315" title="B.zero1">B.zero1</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&aesthetic_line=55" title="DIVA">DIVA</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&aesthetic_line=105" title="Save The Children">SERPENTI</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&aesthetic_line=22" title="BVLGARI BVLGARI">BVLGARI BVLGARI</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&aesthetic_line=568" title="MVSA">MVSA</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&aesthetic_line=81" title="monete">monete</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&aesthetic_line=93" title="parentesi">parentesi</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&aesthetic_line=36" title="save the children">save the children</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&aesthetic_line=638" title="Sapphire Flower">Sapphire Flower</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&aesthetic_line=70" title="Intarsio">Intarsio</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=315&aesthetic_line=47" title="allegra">allegra</a></li>
+                                                                            <li><a href="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/Bulgari _ Alianzas de lujo y anillos de compromiso.html" title=""></a></li>
+                                                                    </ul>
+                            </li>
+                        </ul>
+                                    </li>
+                                                                                                        <li class="watches " style="display: none;">
+                    <aside>
+                        <ul>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/watches/new-launches">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_1_3_v_2.jpg" alt="New Launches" title="NOVEDADES">
+                                    </figure>
+                                    <span>NOVEDADES</span>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://www.bulgari.com/download/pdf/2014-watches/2014-WTC-CAT-PT.pdf">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_2_3_v_5.jpg" alt="RELOJES DE ALTA JOYERÍA" title="RELOJES DE ALTA JOYERÍA">
+                                    </figure>
+                                    <span>RELOJES DE ALTA JOYERÍA</span>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://bit.ly/PT_Wat_Cat">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_3_3_v_2.jpg" alt="Watches Catalogue" title="Watches Catalogue">
+                                    </figure>
+                                    <span>Watches Catalogue</span>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/men-high-end-watches">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_4_3_v_2.jpg" alt="Haute Horlogerie" title="ALTA RELOJERÍA">
+                                    </figure>
+                                    <span>ALTA RELOJERÍA</span>
+                                </a>
+                            </li>
+                                                    </ul>
+                    </aside>
+                                            <ul>
+                            <li>
+                                <strong>HOMBRE</strong>
+                                <ul>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=317&sign=84" title="octo">octo</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?sign=21&root_level=317&gender=237" title="BVLGARI BVLGARI">BVLGARI BVLGARI</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?sign=53&root_level=317&gender=237" title="Diagono">diagono</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=317&aesthetic_line=51" title="Daniel Roth">Daniel Roth</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br" title=""></a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br" title=""></a></li>
+                                                                    </ul>
+                            </li>
+                                                        <li>
+                                <strong>MUJER</strong>
+                                <ul>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?sign=106&root_level=317" title="Serpenti">Serpenti</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?sign=21&root_level=317&gender=236" title="BVLGARI BVLGARI">BVLGARI BVLGARI</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?sign=18&root_level=317" title="B.zero1">B.zero1</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=317&aesthetic_line=558&gender=236" title="Diagono">Diagono</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?sign=594" title="Lvcea">Lvcea</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?sign=595" title="Creative Jewellery">RELOJES JOYA</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br" title=""></a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br" title=""></a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br" title=""></a></li>
+                                                                    </ul>
+                            </li>
+                        </ul>
+                                    </li>
+                                                                                                        <li class="Accessories " style="display: none;">
+                    <aside>
+                        <ul>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/accessories/new-launches">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_1_6_v_7.jpg" alt="NOVEDADES" title="NOVEDADES">
+                                    </figure>
+                                    <span>NOVEDADES</span>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/accessories/serpenti">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_2_6_v_4.jpg" alt="Serpenti" title="Serpenti Scaglie">
+                                    </figure>
+                                    <span>Serpenti Scaglie</span>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/products.html?root_level=314&product_detail_one=126&product_detail_two=152">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_3_6_v_4.jpg" alt="PEQUEÑOS ARTÍCULOS DE MARROQUINERÍA" title="PEQUEÑOS ARTÍCULOS DE MARROQUINERÍA">
+                                    </figure>
+                                    <span>PEQUEÑOS ARTÍCULOS DE MARROQUINERÍA</span>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/Textiles">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_4_6_v_2.jpg" alt="TEJIDOS" title="TEJIDOS">
+                                    </figure>
+                                    <span>TEJIDOS</span>
+                                </a>
+                            </li>
+                                                    </ul>
+                    </aside>
+                                            <ul>
+                            <li>
+                                <strong>CATEGORÍAS</strong>
+                                <ul>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&product_detail_one=125" title="BOLSOS">BOLSOS</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&product_detail_one=126&product_detail_two=152" title="CARTERAS">CARTERAS</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&product_detail_one=124" title="PULSERAS DE PIEL">PULSERAS DE PIEL</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&product_detail_one=126&product_detail_two=146" title="CINTURONES">CINTURONES</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&product_detail_one=126&product_detail_two=147" title="TARJETEROS Y MONEDEROS">TARJETEROS Y MONEDEROS</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&product_detail_three=389" title="Neceseres de viaje y accesorios">Neceseres de viaje y accesorios</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&product_detail_one=126&product_detail_two=149" title="LLAVEROS">LLAVEROS</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&product_detail_one=401" title="GAFAS">GAFAS</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&product_detail_two=151" title="CORBATAS DE SIETE  PLIEGUES">CORBATAS DE SIETE  PLIEGUES</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&product_detail_two=148" title="PAÑUELOS Y ESTOLAS">PAÑUELOS Y ESTOLAS</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&product_detail_three=214" title="Llaveros y Clip para billetes">Llaveros y Clips para billetes</a></li>
+                                                                    </ul>
+                            </li>
+                                                        <li>
+                                <strong>COLECCIONES</strong>
+                                <ul>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&aesthetic_line=664" title="Serpenti Forever">Serpenti Forever</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&aesthetic_line=663" title="Serpenti Scaglie">Serpenti Scaglie</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&aesthetic_line=22" title="BVLGARI∙BVLGARI">BVLGARI∙BVLGARI</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&aesthetic_line=665" title="Serpenti Hypnotic">Serpenti Hypnotic</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&aesthetic_line=568" title="MVSA">MVSA</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&aesthetic_line=559" title="BVLGARI Cocktail">BVLGARI Cocktail</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&aesthetic_line=810" title="BVLGARI∙BVLGARI MAN">BVLGARI∙BVLGARI MAN</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=314&aesthetic_line=83" title="OCTO">OCTO</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br" title=""></a></li>
+                                                                    </ul>
+                            </li>
+                        </ul>
+                                    </li>
+                                                                                                        <li class="threecolumns nav-3-columns" style="display: none;">
+                    <aside>
+                        <ul>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/perfumes/new-launches">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_1_22_v_1.jpg" alt="NOVEDADES" title="NOVEDADES">
+                                    </figure>
+                                    <span>NOVEDADES</span>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/le-gemme">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_2_22.jpg" alt="LE GEMME" title="ALTA PERFUMERÍA BVLGARI LE GEMME">
+                                    </figure>
+                                    <span>ALTA PERFUMERÍA BVLGARI LE GEMME</span>
+                                </a>
+                            </li>
+                                                    </ul>
+                    </aside>
+                                            <ul>
+                            <li>
+                                <strong>HOMBRE</strong>
+                                <ul>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?sign=12&aesthetic_line=13" title="AQVA POUR HOMME">AQVA POUR HOMME</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?sign=12&aesthetic_line=15" title="AQVA POUR HOMME MARINE">AQVA POUR HOMME MARINE</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?sign=12&aesthetic_line=14" title="AQVA AMARA">AQVA AMARA</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=316&aesthetic_line=39" title="BVLGARI MAN">BVLGARI MAN</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?sign=33&aesthetic_line=34" title="BVLGARI MAN EXTREME">BVLGARI MAN EXTREME</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=316&aesthetic_line=628" title="BVLGARI MAN IN BLACK">BVLGARI MAN IN BLACK</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=316&aesthetic_line=26" title="BLV POUR HOMME">BLV POUR HOMME</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=316&sign=24&gender=237" title="BVLGARI POUR HOMME">BVLGARI POUR HOMME</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?root_level=316&aesthetic_line=704" title="BLACK">BLACK</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br" title=""></a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br" title=""></a></li>
+                                                                    </ul>
+                            </li>
+                                                            <li>
+                                    <strong>MUJER</strong>
+                                    <ul>
+                                                                                    <li><a href="http://www.bulgari.com/es-br/products.html?root_level=316&aesthetic_line=89" title="OMNIA INDIAN GARNET">OMNIA INDIAN GARNET</a></li>
+                                                                                    <li><a href="http://www.bulgari.com/es-br/products.html?root_level=316&aesthetic_line=88" title="OMNIA CRYSTALLINE">OMNIA CRYSTALLINE</a></li>
+                                                                                    <li><a href="http://www.bulgari.com/es-br/products.html?root_level=316&aesthetic_line=87" title="OMNIA CORAL">OMNIA CORAL</a></li>
+                                                                                    <li><a href="http://www.bulgari.com/es-br/products.html?root_level=316&aesthetic_line=86" title="OMNIA AMÉTHYSTE">OMNIA AMÉTHYSTE</a></li>
+                                                                                    <li><a href="http://www.bulgari.com/es-br/products.html?root_level=316&sign=71" title="Jasmin Noir">Jasmin Noir</a></li>
+                                                                                    <li><a href="http://www.bulgari.com/es-br/products.html?aesthetic_line=97" title="BVLGARI POUR FEMME">bvlgari pour Femme</a></li>
+                                                                                    <li><a href="http://www.bulgari.com/es-br/products.html?aesthetic_line=102" title="Rose Essentielle">Rose Essentielle</a></li>
+                                                                                    <li><a href="http://www.bulgari.com/es-br/products.html?root_level=316&aesthetic_line=381" title="HAUTE PARFUMERIE LE GEMME">HAUTE PARFUMERIE LE GEMME</a></li>
+                                                                                    <li><a href="http://www.bulgari.com/es-br/products.html?root_level=316&aesthetic_line=751" title="BVLGARI AQVA Divina">BVLGARI AQVA Divina</a></li>
+                                                                                    <li><a href="http://www.bulgari.com/es-br/products.html?root_level=316&aesthetic_line=95" title="PETITS ET MAMANS">PETITS ET MAMANS</a></li>
+                                                                                    <li><a href="http://www.bulgari.com/es-br" title=""></a></li>
+                                                                            </ul>
+                                </li>
+                                                        <li>
+                                <strong>UNISEX</strong>
+                                <ul>
+                                                                            <li><a href="http://www.bulgari.com/es-br/products.html?sign=57" title="Eau Parfumée">Eau Parfumée</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br" title=""></a></li>
+                                                                    </ul>
+                            </li>
+                        </ul>
+                                    </li>
+                                                                                                                                <li class="gifts " style="display: none;">
+                    <aside>
+                        <ul>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/giftideas/for-him.html">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_1_10_v_1.jpg" alt="Regalos para él" title="Regalos para él">
+                                    </figure>
+                                    <span>Regalos para él</span>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/giftideas/for-her.html">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_2_10_v_1.jpg" alt="Regalos para ella " title="Regalos para ella ">
+                                    </figure>
+                                    <span>Regalos para ella </span>
+                                </a>
+                            </li>
+                                                    </ul>
+                    </aside>
+                                            <ul>
+                            <li>
+                                <strong></strong>
+                                <ul>
+                                                                            <li><a href="http://www.bulgari.com/es-br/giftideas/for-him.html" title="Regalos para él">Regalos para él</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br" title=""></a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br" title=""></a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br" title=""></a></li>
+                                                                    </ul>
+                            </li>
+                                                        <li>
+                                <strong></strong>
+                                <ul>
+                                                                            <li><a href="http://www.bulgari.com/es-br/giftideas/for-her.html" title="Regalos para ella ">Regalos para ella </a></li>
+                                                                    </ul>
+                            </li>
+                        </ul>
+                                    </li>
+                                                                                                                                                                                                    <li class="the-maison-2 " style="display: none;">
+                    <aside>
+                        <ul>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/heritage-the-evolution-of-bulgari-style">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_1_21_v_5.jpg" alt="" title="LEGADO">
+                                    </figure>
+                                    <span>LEGADO</span>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/bulgari-bulgari">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_2_21_v_2.jpg" alt="" title="BVLGARI ROMA&lt;br&gt;CELEBRACIÓN DE 40 AÑOS DE PASADO">
+                                    </figure>
+                                    <span>BVLGARI ROMA<br>CELEBRACIÓN DE 40 AÑOS DE PASADO</span>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/save-the-children">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_3_21.jpg" alt="" title="FILANTROPÍA">
+                                    </figure>
+                                    <span>FILANTROPÍA</span>
+                                </a>
+                            </li>
+                                                        <li>
+                                <a href="http://www.bulgari.com/es-br/the-maison-savoir-faire">
+                                    <figure>
+                                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/submenu_image_4_21_v_1.jpg" alt="" title="SABER HACER">
+                                    </figure>
+                                    <span>SABER HACER</span>
+                                </a>
+                            </li>
+                                                    </ul>
+                    </aside>
+                                            <ul>
+                            <li>
+                                <strong>SÍGANOS</strong>
+                                <ul>
+                                                                            <li><a href="http://www.facebook.com/bulgari" title="Facebook" target="_blank">Facebook</a></li>
+                                                                            <li><a href="http://www.twitter.com/bulgariofficial" title="" target="_blank">Twitter</a></li>
+                                                                            <li><a href="http://www.instagram.com/bulgariofficial" title="Instagram" target="_blank">Instagram</a></li>
+                                                                            <li><a href="http://www.youtube.com/Bulgari" title="YouTube" target="_blank">YouTube</a></li>
+                                                                            <li><a href="https://www.linkedin.com/company/bulgari" title="Linkedin" target="_blank">Linkedin</a></li>
+                                                                    </ul>
+                            </li>
+                                                        <li>
+                                <strong>BULGARI Y USTED</strong>
+                                <ul>
+                                                                            <li><a href="http://www.bulgari.com/es-br/about-bulgari-people-and-careers" title="People &amp; Careers">ACERCA DE BULGARI</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/Customer_care_Jewellery" title="Customer Care">SERVICIO DE ATENCIÓN AL CLIENTE</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/about-bulgari-csr" title="">RESPONSABILIDAD SOCIAL CORPORATIVA</a></li>
+                                                                            <li><a href="http://www.bulgari.com/es-br/Contactus" title="Contact Us">CONTACTO</a></li>
+                                                                    </ul>
+                            </li>
+                        </ul>
+                                    </li>
+                                                                                                <li class="search" style="display: none;">
+            <div class="input">
+                <form action="http://www.bulgari.com/es-br/catalogsearch/result/" method="GET">
+                    <input type="text" id="search-nav" placeholder="Búsqueda de productos por símbolo, código o descripción" name="q">
+                    <input type="submit" value="Búsqueda" class="btn">
+                </form>
+            </div>
+        </li>
+    </ul>
+</nav>
+<script>
+    $j(document).ready(function() {
+        var customer_privacy_cookie = getPrivacyCookie();
+        if(customer_privacy_cookie == 1) {
+            $j('#cookie-agreements-bar').remove();
+        } else {
+            $j('#cookie-agreements-bar').show();
+        }        
+        
+        function getPrivacyCookie() {
+            var cookies = document.cookie.split(';');
+            for(var i=0; i<cookies.length; i++) {               
+                var name = cookies[i].split('=')[0];
+                if(name.trim() == 'customer_privacy_policy') {
+                    return parseInt(cookies[i].split('=')[1]);
+                }
+            }
+            return 0;
+        }
+    });
+    //var commonFloatLength = ;
+</script>
+        
+
+        <div class="container parallax">
+            <!--{MESSAGES_3f9737c153d854d9f0c5395ce4cdb394}--><!--/{MESSAGES_3f9737c153d854d9f0c5395ce4cdb394}--><p><script type="text/javascript">
+
+    function addToWishList(url,sku,fname,sname,price){
+        
+        var name = fname + ' ' + sname + ' (' + sku + ')';
+        
+        cmCreateConversionEventTag (websiteId + ': ' + name,"1",websiteId + ': ' + "Wishlist: Add");
+        location.href = url;
+    }   
+
+</script>
+
+            </p><article class="wide right">
+                                <figure>
+                    <img draggable="false" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_2120.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_2120_1024x402.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_2120_640x251.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_2120_480x188.jpg" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_2120.jpg" alt="">
+                </figure>
+                                            <div class="title white" style="transform: translate3d(0px, 0px, 0px);">
+                        <h1>La colección Bridal</h1>
+                                                    <strong>Wear it with love</strong>
+                                                                            <span class="link " style="display:block; margin-top:10px;">
+                                <a href="http://www.bulgari.com/es-br/products.html?sign=48&product_detail_one=228" title="">
+                                    Descubrir                                </a>
+                            </span>
+                                                                                            </div>
+                            </article>
+            
+        
+<article class="wide video" style="margin-top: 40px;">
+            <h2 class="super-title">LA CAMPAÑA</h2>
+        <a href="http://www.bulgari.com/es-br/bulgari-bridal-nuova-campagna-video/">
+        <figure>
+            <img data-1400="http://www.bulgari.com/media/alpencms/video/cms_block_video_link_image_2106.jpg" data-1024="http://www.bulgari.com/media/alpencms/video/cms_block_video_link_image_2106_1024x402.jpg" data-640="http://www.bulgari.com/media/alpencms/video/cms_block_video_link_image_2106_640x251.jpg" data-480="http://www.bulgari.com/media/alpencms/video/cms_block_video_link_image_2106_480x188.jpg" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_video_link_image_2106.jpg" draggable="false" alt="article">
+        </figure>
+    </a>
+</article><article class="pushes" style="margin-top: 40px;">
+    <div class="carrousel">
+        <ul id="c2e84" class="blocs non-align" style="width: 1020px; margin-left: 0px;">
+                            <li class="push zones-">
+                    <figure>
+                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_small_block_image_1309.jpg" alt="Dedicata a Venezia">
+                    </figure>
+                    <div class="description">
+                        <h3>Anillos de compromiso<br></h3>
+                        <span class="link" title="Engagement Rings">
+                            <a href="http://www.bulgari.com/es-br/products.html?sign=48&product_detail_one=228">Descubrir</a>
+                        </span>
+                    </div>
+                </li>
+                                        <li class="push zones-" style="margin-top: 0px;">
+                    <figure>
+                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_small_block_image_1308_v_1.jpg" alt="Wedding Bands">
+                    </figure>
+                    <div class="description">
+                        <h3>Alianzas<br></h3>
+                        <span class="link" title="Wedding Bands">
+                            <a href="http://www.bulgari.com/es-br/products.html?sign=48&product_detail_one=235">Descubrir</a>
+                        </span>
+                    </div>
+                </li>
+                                        <li class="push zones-">
+                    <figure>
+                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_small_block_image_1310_v_1.jpg" alt="Love Celebrations">
+                    </figure>
+                    <div class="description">
+                        <h3>Celebraciones de amor<br></h3>
+                        <span class="link" title="Love Celebrations">
+                            <a href="http://www.bulgari.com/es-br/products.html?sign=48&product_detail_one=218">Descubrir</a>
+                        </span>
+                    </div>
+                </li>
+                                </ul>
+    <div class="carrousel-menu" style="display: none;"><a href="http://www.bulgari.com/es-br/bridal#" class="arrow left">left</a><span class="current">1 - 3</span>/<span class="total">3</span><a href="http://www.bulgari.com/es-br/bridal#" class="arrow right">right</a></div></div>
+</article>
+
+<script type="text/javascript">
+
+    function addToWishList(url,sku,fname,sname,price){
+        
+        var name = fname + ' ' + sname + ' (' + sku + ')';
+        
+        cmCreateConversionEventTag (websiteId + ': ' + name,"1",websiteId + ': ' + "Wishlist: Add");
+        location.href = url;
+    }   
+
+</script>
+
+            <article class="wide right" style="margin-top: 45.5288461538462px;">
+                                <figure>
+                    <img draggable="false" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_1788_v_1.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_1788_v_1_1024x402.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_1788_v_1_640x251.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_1788_v_1_480x188.jpg" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_1788_v_1.jpg" alt="">
+                </figure>
+                                            <div class="title white" style="transform: translate3d(0px, 22.1153846153846px, 0px);">
+                        <h1>La inspiración</h1>
+                                                    <strong>En Roma, la más eterna de las ciudades, el amor es para siempre. </strong>
+                                                                            <span class="link " style="display:block; margin-top:10px;">
+                                <a href="http://www.bulgari.com/es-br/bridal-inspiration" title="">
+                                    Descubra                                </a>
+                            </span>
+                                                                                            </div>
+                            </article>
+            
+        <div class="widget widget-static-block">
+<div class="carrousel" style="width: 1000px;">
+    <ul style="-webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none; width: 5000px; margin-left: 0px;">
+                                <li style="width: 1000px;">
+                <article class="narrow left" style="margin-top: 90px;">
+
+                                        
+                    <figure>
+                        <img draggable="false" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_1791_v_1.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_1791_v_1.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_1791_v_1_640x391.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_1791_v_1.jpg" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_1791_v_1.jpg" alt="">
+                    </figure>
+                    <div class="title white" style="transform: translate3d(0px, 200px, 0px);">
+                        <h5>BVLGARI MARCA LA DIFERENCIA</h5>
+                                                        <span class="link">
+                                <a href="http://www.bulgari.com/es-br/bvlgari-bridal-difference">
+        Descubra                                 </a>
+                            </span>
+                        </div>
+                </article>
+            </li>
+                                    <li style="width: 1000px;">
+                <article class="narrow left" style="margin-top: 90px;">
+
+                                        
+                    <figure>
+                        <img draggable="false" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_748_v_1.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_748_v_1.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_748_v_1_640x391.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_748_v_1.jpg" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_748_v_1.jpg" alt="">
+                    </figure>
+                    <div class="title white" style="transform: translate3d(0px, 200px, 0px);">
+                        <h5>Claridad</h5>
+                                                        <span class="link">
+                                <a href="http://www.bulgari.com/es-br/bridal2_clarity_guide_to_diamonds_popin1">
+        Más información                                </a>
+                            </span>
+                        </div>
+                </article>
+            </li>
+                                    <li style="width: 1000px;">
+                <article class="narrow left" style="margin-top: 90px;">
+
+                                        
+                    <figure>
+                        <img draggable="false" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_749_v_4.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_749_v_4.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_749_v_4_640x391.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_749_v_4.jpg" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_749_v_4.jpg" alt="">
+                    </figure>
+                    <div class="title white" style="transform: translate3d(0px, 200px, 0px);">
+                        <h5>Color</h5>
+                                                        <span class="link">
+                                <a href="http://www.bulgari.com/es-br/bridal2_colour_guide_to_diamonds_popin">
+        Más información                                </a>
+                            </span>
+                        </div>
+                </article>
+            </li>
+                                    <li style="width: 1000px;">
+                <article class="narrow left" style="margin-top: 90px;">
+
+                                        
+                    <figure>
+                        <img draggable="false" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_750_v_3.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_750_v_3.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_750_v_3_640x391.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_750_v_3.jpg" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_750_v_3.jpg" alt="">
+                    </figure>
+                    <div class="title white" style="transform: translate3d(0px, 200px, 0px);">
+                        <h5>Talla</h5>
+                                                        <span class="link">
+                                <a href="http://www.bulgari.com/es-br/bridal2_the_cut_guide-to-diamonds_popin">
+        Más información                                </a>
+                            </span>
+                        </div>
+                </article>
+            </li>
+                                    <li style="width: 1000px;">
+                <article class="narrow left" style="margin-top: 90px;">
+
+                                        
+                    <figure>
+                        <img draggable="false" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_746_v_1.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_746_v_1.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_746_v_1_640x391.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_746_v_1.jpg" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_746_v_1.jpg" alt="">
+                    </figure>
+                    <div class="title white" style="transform: translate3d(0px, 200px, 0px);">
+                        <h5>El Certificado del GIA</h5>
+                                                        <span class="link">
+                                <a href="http://www.bulgari.com/es-br/bridal2_gia_guide_to_diamonds_popin1">
+        Más información                                </a>
+                            </span>
+                        </div>
+                </article>
+            </li>
+                </ul>
+<div class="carrousel-menu"><a href="http://www.bulgari.com/es-br/bridal#" class="arrow left">left</a><span class="current">1</span>/<span class="total">5</span><a href="http://www.bulgari.com/es-br/bridal#" class="arrow right active">right</a></div></div></div>
+
+<div class="carrousel" style="width: 1000px;">
+    <ul style="-webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none; width: 4000px; margin-left: 0px;">
+                                <li style="width: 1000px;">
+                <article class="narrow left" style="margin-top: 90px;">
+
+                                        
+                    <figure>
+                        <img draggable="false" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_2122.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_2122.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_2122_640x391.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_2122.jpg" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_2122.jpg" alt="">
+                    </figure>
+                    <div class="title white" style="transform: translate3d(0px, 200px, 0px);">
+                        <h5>LA CAMPAÑA</h5>
+                                <strong>Wear it with love</strong>
+                            <div style="clear:both; height: 10px;"></div>
+                                                </div>
+                </article>
+            </li>
+                                    <li style="width: 1000px;">
+                <article class="narrow left" style="margin-top: 90px;">
+
+                                        
+                    <figure>
+                        <img draggable="false" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_2123.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_2123.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_2123_640x391.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_2123.jpg" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_2123.jpg" alt="">
+                    </figure>
+                    <div class="title white" style="transform: translate3d(0px, 200px, 0px);">
+                        <h5>LA CAMPAÑA</h5>
+                                <strong>Wear it with love</strong>
+                            <div style="clear:both; height: 10px;"></div>
+                                                </div>
+                </article>
+            </li>
+                                    <li style="width: 1000px;">
+                <article class="narrow left" style="margin-top: 90px;">
+
+                                        
+                    <figure>
+                        <img draggable="false" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_2124.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_2124.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_2124_640x391.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_2124.jpg" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_2124.jpg" alt="">
+                    </figure>
+                    <div class="title white" style="transform: translate3d(0px, 200px, 0px);">
+                        <h5>LA CAMPAÑA</h5>
+                                <strong>Wear it with love</strong>
+                            <div style="clear:both; height: 10px;"></div>
+                                                </div>
+                </article>
+            </li>
+                                    <li style="width: 1000px;">
+                <article class="narrow left" style="margin-top: 90px;">
+
+                                        
+                    <figure>
+                        <img draggable="false" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_2125.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_2125.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_2125_640x391.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_2125.jpg" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_2125.jpg" alt="">
+                    </figure>
+                    <div class="title white" style="transform: translate3d(0px, 200px, 0px);">
+                        <h5>LA CAMPAÑA</h5>
+                                <strong>Wear it with love</strong>
+                            <div style="clear:both; height: 10px;"></div>
+                                                </div>
+                </article>
+            </li>
+                </ul>
+<div class="carrousel-menu"><a href="http://www.bulgari.com/es-br/bridal#" class="arrow left">left</a><span class="current">1</span>/<span class="total">4</span><a href="http://www.bulgari.com/es-br/bridal#" class="arrow right active">right</a></div></div>
+<article class="wide video" style="margin-top: 90px;">
+            <h2 class="super-title">Behind The Scenes - The Video</h2>
+        <a href="http://www.bulgari.com/es-br/bulgari-bridal-nuova-campagna-making-of-video/">
+        <figure>
+            <img data-1400="http://www.bulgari.com/media/alpencms/video/cms_block_video_link_image_2108.jpg" data-1024="http://www.bulgari.com/media/alpencms/video/cms_block_video_link_image_2108_1024x402.jpg" data-640="http://www.bulgari.com/media/alpencms/video/cms_block_video_link_image_2108_640x251.jpg" data-480="http://www.bulgari.com/media/alpencms/video/cms_block_video_link_image_2108_480x188.jpg" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_video_link_image_2108.jpg" draggable="false" alt="article">
+        </figure>
+    </a>
+</article><div class="widget widget-static-block">
+<div class="carrousel" style="width: 1000px;">
+    <ul style="-webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none; width: 5000px; margin-left: 0px;">
+                                <li style="width: 1000px;">
+                <article class="narrow left" style="margin-top: 90px;">
+
+                                        
+                    <figure>
+                        <img draggable="false" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_2149.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_2149.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_2149_640x391.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_2149.jpg" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_2149.jpg" alt="">
+                    </figure>
+                    <div class="title black" style="transform: translate3d(0px, 200px, 0px);">
+                        <h5>Behind the scenes</h5>
+                                                </div>
+                </article>
+            </li>
+                                    <li style="width: 1000px;">
+                <article class="narrow right" style="margin-top: 90px;">
+
+                                        
+                    <figure>
+                        <img draggable="false" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_2150.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_2150.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_2150_640x391.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_2150.jpg" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_2150.jpg" alt="">
+                    </figure>
+                    <div class="title black" style="transform: translate3d(0px, 200px, 0px);">
+                        <h5>Behind the scenes</h5>
+                                                </div>
+                </article>
+            </li>
+                                    <li style="width: 1000px;">
+                <article class="narrow right" style="margin-top: 90px;">
+
+                                        
+                    <figure>
+                        <img draggable="false" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_2151.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_2151.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_2151_640x391.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_2151.jpg" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_2151.jpg" alt="">
+                    </figure>
+                    <div class="title black" style="transform: translate3d(0px, 200px, 0px);">
+                        <h5>Behind the scenes</h5>
+                                                </div>
+                </article>
+            </li>
+                                    <li style="width: 1000px;">
+                <article class="narrow left" style="margin-top: 90px;">
+
+                                        
+                    <figure>
+                        <img draggable="false" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_2152.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_2152.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_2152_640x391.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_2152.jpg" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_2152.jpg" alt="">
+                    </figure>
+                    <div class="title black" style="transform: translate3d(0px, 200px, 0px);">
+                        <h5>Behind the scenes</h5>
+                                                </div>
+                </article>
+            </li>
+                                    <li style="width: 1000px;">
+                <article class="narrow left" style="margin-top: 90px;">
+
+                                        
+                    <figure>
+                        <img draggable="false" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_block_image_2153.jpg" data-480="http://www.bulgari.com/media/alpencms/cms_block_image_2153.jpg" data-640="http://www.bulgari.com/media/alpencms/cms_block_image_2153_640x391.jpg" data-1024="http://www.bulgari.com/media/alpencms/cms_block_image_2153.jpg" data-1400="http://www.bulgari.com/media/alpencms/cms_block_image_2153.jpg" alt="">
+                    </figure>
+                    <div class="title black" style="transform: translate3d(0px, 200px, 0px);">
+                        <h5>Behind the scenes</h5>
+                                                </div>
+                </article>
+            </li>
+                </ul>
+<div class="carrousel-menu"><a href="http://www.bulgari.com/es-br/bridal#" class="arrow left">left</a><span class="current">1</span>/<span class="total">5</span><a href="http://www.bulgari.com/es-br/bridal#" class="arrow right active">right</a></div></div></div>
+<article class="pushes" style="margin-top: 90px;">
+    <div class="carrousel">
+        <ul id="HJA9y" class="blocs" style="width: 1020px; margin-left: 0px;">
+                            <li class="push zones-">
+                    <figure>
+                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_small_block_image_612.jpg" alt="El arte de la joyería">
+                    </figure>
+                    <div class="description">
+                        <h3>El arte de la joyería<br></h3>
+                        <span class="link" title="about-bulgari-the-art-of-jewellery-making">
+                            <a href="http://www.bulgari.com/es-br/about-bulgari-the-art-of-jewellery-making">Descubrir</a>
+                        </span>
+                    </div>
+                </li>
+                                        <li class="push zones-">
+                    <figure>
+                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_small_block_image_601.jpg" alt="Servicio de joyería">
+                    </figure>
+                    <div class="description">
+                        <h3>Servicio de joyería<br></h3>
+                        <span class="link" title="Jewellery Care">
+                            <a href="http://www.bulgari.com/es-br/Customer_care_Jewellery">Más información</a>
+                        </span>
+                    </div>
+                </li>
+                                        <li class="push zones-">
+                    <figure>
+                        <img src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/cms_small_block_image_614.jpg" alt="Localizador de tiendas">
+                    </figure>
+                    <div class="description">
+                        <h3>Localizador de tiendas<br></h3>
+                        <span class="link" title="store_locator">
+                            <a href="http://www.bulgari.com/es-br/storelocator">Buscar una tienda</a>
+                        </span>
+                    </div>
+                </li>
+                                </ul>
+    <div class="carrousel-menu" style="display: none;"><a href="http://www.bulgari.com/es-br/bridal#" class="arrow left">left</a><span class="current">1 - 3</span>/<span class="total">3</span><a href="http://www.bulgari.com/es-br/bridal#" class="arrow right">right</a></div></div>
+</article>
+
+    <script type="text/javascript">
+        
+                
+
+        function getSessionId() {
+            var cookies = document.cookie.split(';');
+            for(var i=0; i<cookies.length; i++) {               
+                var name = cookies[i].split('=')[0];
+                if(name.trim() == 'wwsessionid') {
+                    return cookies[i].split('=')[1];
+                }
+            }
+            return 0;
+        }
+        
+        function getCRMId(){
+            var cookies = document.cookie.split(';');
+            for(var i=0; i<cookies.length; i++) {               
+                var name = cookies[i].split('=')[0];
+                if(name.trim() == 'ccid') {
+                    return cookies[i].split('=')[1];
+                }
+            }
+            return 0;
+        }
+        
+        $j.ajax({
+            url: 'http://www.bulgari.com/rtt',
+            dataType: 'jsonp',
+            data: { 
+                SESSION_ID    : getSessionId(),
+                SAP_CRM_ID    : getCRMId(),
+                CURR_SBU      : '',
+                CURR_SIGN     : 'BRID',
+                CURR_MATERIAL : '',
+                CURR_COLOR    : '',
+                CURR_PROD_DT_1: '',
+                CURR_PROD_DT_2: '',
+                            },
+            success: function(data){
+                console.log(data);
+            },
+            error: function () { 
+                console.log('error'); 
+            }
+        });
+    </script>
+<p></p>        </div>
+
+        <footer class="footer" role="contentinfo">
+
+      <div class="wrapper">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="http://www.bulgari.com/int/about-bulgari-company-overview">BVLGARI</a></li>
+                <li><a href="http://www.bulgari.com/int/heritage-the-evolution-of-bulgari-style">LEGADO</a></li>
+<li><a href="https://presslounge.bulgari.com/welcome.php" target="_blank">Press Lounge</a></li>
+            </ul>
+            <ul>
+                <li><a href="http://www.bulgari.com/int/Customer_care_Jewellery">Servicio de atención al cliente</a></li>
+                <li><a href="http://www.bulgari.com/int/privacy-policy">Política de privacidad</a></li><li><a href="http://www.bulgari.com/int/cookie-management">GESTIÓN DE <em>COOKIES</em></a></li>
+
+                                                                    <li><a href="http://www.bulgari.com/int/countries">IDIOMA</a></li>
+                            </ul>
+        </nav>
+        <nav class="social">
+            <ul>
+                <li><a class="facebook" href="http://www.facebook.com/bulgari" target="_blank">facebook</a></li>
+                <li><a class="twitter " href="http://twitter.com/bulgariofficial" target="_blank">twitter</a></li>
+                <li><a class="youtube" href="http://www.youtube.com/Bulgari" target="_blank">youtube</a></li>
+                <li><a class="instagram" href="http://instagram.com/bulgariofficial" target="_blank">instagram</a></li>
+ <li><a class="Linkedin" href="https://www.linkedin.com/company/bulgari/careers?trk=top_nav_careers" target="_blank">linkedin</a></li>
+            </ul>
+        </nav>
+        <img alt="bulgari" src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/logo.jpg">
+    </div></footer>        
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/console.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/easing.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/HammerJS.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/nanoscroller.min.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/rAF.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/tmpl.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/Accordion.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/Article.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/ArticlesList.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/BrandNav.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/Carrousel.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/Checkbox.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/Filters.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/MapPane.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/Navigation.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/Placeholder.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/Popin.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/ProductImages.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/ProductText.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/RelatedProducts.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/Slideshow.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/Cookie.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/ShoppingBag.js"></script>
+        <script src="./Bulgari _ Alianzas de lujo y anillos de compromiso_files/main.js"></script>
+        
+        <script>
+//            var intWidgetObject = new Array();
+            var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            var elems = document.getElementsByTagName('img');
+            var size = 360; //FOR PERSONALIZATION
+            
+
+            for(var i=0;i < elems.length;i++){
+                var src = "";
+                if(width > 360 && elems[i].getAttribute("data-480")){
+                    src = elems[i].getAttribute("data-480");
+                    size = 480;
+                }
+                if(width > 480 && elems[i].getAttribute("data-640")){
+                    src = elems[i].getAttribute("data-640");
+                    size = 640;
+                }
+                if(width > 640 && elems[i].getAttribute("data-1024")){
+                    src = elems[i].getAttribute("data-1024");
+                    size = 1024;
+                }
+                if(width > 1024 && elems[i].getAttribute("data-1400")){
+                    src = elems[i].getAttribute("data-1400");
+                    size = 1400;
+                }
+                if(src !=="")elems[i].src = src;
+            }
+
+
+        </script>
+        <script>
+            $j(document).ready(function(){
+                
+                setTimeout(setBackground,500);
+            });
+            function setBackground(){
+                if(_obj.win_w>640) {
+                    if($j('#bg-decoration').length > 0) {
+                        if($j('#bg-decoration').attr('data-id') == 'countries' || $j('#bg-decoration').attr('data-id') == 'contactus') {
+                            $j('div.container').prepend(tmpl($j('#bg-decoration').html()));
+                        } else {
+                            $j('body').prepend(tmpl($j('#bg-decoration').html()));
+                        }
+                    }
+                }
+            }
+        </script>
+        <script>
+            $j(document).ready(function() {
+                $j('#closeCookieOverlayWithX').on('click', function() {
+                    var milliseconds = 2592000 / 86400;
+                    var date = new Date();
+                    date.setTime(date.getTime() + (milliseconds * 24 * 60 * 60 * 1000));
+                    var cookie_expire = date.toGMTString();
+                    var cookie = "customer_privacy_policy=1;path=/;expires=" + cookie_expire + ";";
+                    document.cookie = cookie;
+                });
+            });
+        </script>
+    
+
+</body></html>

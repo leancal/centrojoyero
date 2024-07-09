@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<script type="text/javascript">
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+</script>
+</head>
+
+
+<?php
+if(isset($_POST['enviar']))  {
+	$emailbody = 'Nombre: '.$_POST ['Nombre']."\n"	
+	.'Apellido Paterno: '.$_POST['Apellido_P']."\n"
+	.'Apellido Materno: '.$_POST['Apellido_M']."\n"
+	.'Edad: '.$_POST['Edad']."\n"
+	.'E_Mail: '.$_POST['E_Mail']."\n"
+	.'Telefono: '.$_POST['Telefono']."\n"
+	.'Estado: '.$_POST['Estado'];
+	mail('ventas@joyeriaoro.com.mx', 'Formulario Contacto Joyeria Oro', $emailbody,"From:$mail");
+	
+
+}
+?>
+
+<body>
+<form action="" method="post" name="Contacto" id="Contacto">
+<td class="fieldname"><table width="33%">
+        <tbody>        
+  <td width="36%">Nombre: <sup>*</sup></td>
+    <td width="54%"><input class="inputText" size="30" name="Nombre" id="Nombre" style="width: 201px;" value="" type="text" /></td>
+  </tr>
+  <tr>
+    <td width="46%">Apellido Paterno: <sup>*</sup></td>
+    <td><input class="inputText" size="30" name="Apellido_P" id="Apellido_P" style="width: 201px;" value="" type="text" /></td>
+  </tr>
+  <tr>
+    <td width="46%">Apellido Materno: <sup>*</sup></td>
+    <td><input class="inputText" size="30" name="Apellido_M" id="Apellido_M" style="width: 201px;" value="" type="text" /></td>
+  </tr>
+  <tr>
+    <td width="46%">Edad: <sup>*</sup></td>
+    <td><input class="inputText" size="30" name="Edad" id="Edad" style="width: 201px"value="" type="text" /></td>
+  </tr>
+  <tr>
+    <td width="46%">E-Mail: <sup>*</sup></td>
+    <td><input class="inputText" size="30" name="E_Mail" id="E-Mail" style="width: 201px"value="" type="text" /></td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td width="46%">Teléfono: <sup>*</sup></td>
+    <td><input class="inputText" size="30" name="Telefono" id="Telefono" style="width: 201px"value="" type="text" /></td>
+  </tr>
+  <td class="fieldname">Estado: <sup>*</sup></td>
+    <td><select name="Estado" style="width: 207px;">
+      <option value=""></option>
+      <option value="Mexico D.F." selected="selected">Mexico D.F.</option>
+      <option value="Aguascalientes" class="countryApprove">Aguascalientes</option>
+      <option value="Baja California" class="countryApprove">Baja California</option>
+      <option value="Baja California Sur" class="countryApprove">Baja California Sur</option>
+      <option value="Campeche"class="countryApprove">Campeche</option>
+      <option value="Coahuila de Zaragoza">Coahuila de Zaragoza</option>
+      <option value="Colima" class="countryApprove">Colima</option>
+      <option value="Chiapas" class="countryApprove">Chiapas</option>
+      <option value="Chihuahua" class="countryApprove">Chihuahua</option>
+      <option value="Distrito Federal" class="countryApprove">Distrito Federal</option>
+      <option value="Durango" class="countryApprove">Durango</option>
+      <option value="Guanajuato" class="countryApprove">Guanajuato</option>
+      <option value="Guerrero" class="countryApprove">Guerrero</option>
+      <option value="Hidalgo" class="countryApprove">Hidalgo</option>
+      <option value="Jalisco" class="countryApprove">Jalisco</option>
+      <option value="Estado de México" class="countryApprove">Estado de México</option>
+      <option value="Michoacán" class="countryApprove">Michoacán</option>
+      <option value="Morelos" class="countryApprove">Morelos</option>
+      <option value="Nayarit" class="countryApprove">Nayarit</option>
+      <option value="Nuevo León" class="countryApprove">Nuevo León</option>
+      <option value="Oaxaca" class="countryApprove">Oaxaca</option>
+      <option value="Puebla" class="countryApprove">Puebla</option>
+      <option value="Querétaro" class="countryApprove">Querétaro</option>
+      <option value="Quintana Roo" class="countryApprove">Quintana Roo</option>
+      <option value="San Luis Potosí" class="countryApprove">San Luis Potosí</option>
+      <option value="Sinaloa" class="countryApprove">Sinaloa</option>
+      <option value="Sonora" class="countryApprove">Sonora</option>
+      <option value="Tabasco" class="countryApprove">Tabasco</option>
+      <option value="Tamaulipas" class="countryApprove">Tamaulipas</option>
+      <option value="Tlaxcala" class="countryApprove">Tlaxcala</option>
+      <option value="Veracruz" class="countryApprove">Veracruz</option>
+      <option value="Yucatán" class="countryApprove">Yucatán</option>
+      <option value="Zacatecas" class="countryApprove">Zacatecas</option>
+    </select></td>
+  </tr>
+      <td height="35" colspan="2" align="center" td><input name="enviar" type="submit" id="enviar" onClick="MM_validateForm('Nombre','','R','Apellido_P','','R','Apellido_M','','R','Edad','','RinRange1:99','E-Mail','','NisEmail','Telefono','','RisNum');return document.MM_returnValue" value="Enviar>" /></td>
+  </table>
+</form>
+</body>
+</html>

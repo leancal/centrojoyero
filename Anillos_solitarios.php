@@ -1,6 +1,6 @@
 <?php
-$title = "Anillos de Compromiso";
-$content = '<h3 style="text-align: center;" > Anillos de Compromiso</h3>
+$title = "Anillos Solitarios";
+$content = '<h3 style="text-align: center;" > Anillos Solitarios</h3>
                <div id="grid-gallery" class="grid-gallery">
                 <section class="grid-wrap">
                     <ul class="grid">

@@ -4,7 +4,7 @@ $content = '<h3 style="text-align: center;" > Anillos de Compromiso</h3>
                <div id="grid-gallery" class="grid-gallery">
                 <section class="grid-wrap">
                     <ul class="grid">
-                        <li class="grid-sizer"></li><!-- for Masonry column width -->
+                      
                        
                         <li>
                 <figure>
@@ -283,7 +283,5 @@ $content = '<h3 style="text-align: center;" > Anillos de Compromiso</h3>
         <script>
             new CBPGridGallery(document.getElementById("grid-gallery"));
         </script>
-'
-;
+';
 include 'Template.php';
-?>

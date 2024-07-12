@@ -5,59 +5,7 @@ $content = '<h2 style="text-align: center;" >Catálogo de Anillos y Aretes </h2>
                 <section class="grid-wrap">
                     <ul class="grid">
                         <li class="grid-sizer"></li><!-- for Masonry column width -->
-                        <li>
-                            <figure>
-                               <!--  <figcaption><h3>Aretes de oro</h3><p>Hermosos aretes de oro</p></figcaption> -->
-                                <img src="JoyeriaCatalogo/Brochure/Joyas1.jpg" alt="Joyas1"/>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                 <!--  <figcaption><h3>Aretes de oro</h3><p>Hermosos aretes de oro</p></figcaption> -->
-                                <img src="JoyeriaCatalogo/Brochure/Joyas2.jpg" alt="Joyas2"/>
-                                
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="JoyeriaCatalogo/Brochure/Joyas3.jpg" alt="Joyas3"/>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="JoyeriaCatalogo/Brochure/Joyas4.jpg" alt="Joyas4"/>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="JoyeriaCatalogo/Brochure/Joyas5.jpg" alt="Joyeria5"/>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="JoyeriaCatalogo/Brochure/Joyas6.jpg" alt="Joyeria6"/>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="JoyeriaCatalogo/Brochure/Joyas7.jpg" alt="Joyeria7"/>
-                             </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="JoyeriaCatalogo/Brochure/Joyas8.jpg" alt="Joyas8"/>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="JoyeriaCatalogo/Brochure/Joyas9.jpg" alt="Joyas9"/>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="JoyeriaCatalogo/Brochure/Joyas10.jpg" alt="Joyeria10"/>
-                             </figure>
-                        </li>
+                       
                         <li>
                             <figure>
                                 <img src="JoyeriaCatalogo/Brochure/Joyas11.jpg" alt="Joyeria11"/>

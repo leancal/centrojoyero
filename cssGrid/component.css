@@ -22,8 +22,7 @@
 
 .grid-gallery figure img {
 	display: block;
-	//width: 100%;
-        width: 65%;
+	width: 65%;
 }
 
 .grid-gallery figcaption h3 {
@@ -43,13 +42,18 @@
 }
 
 .grid {
-	margin: 0 auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
 }
 
 .grid li {
-	width: 25%;
-	float: left;
-	cursor: pointer;
+    width: calc(33.33% - 20px); /* Ancho deseado, ajusta según necesites */
+    margin: 10px; /* Espacio entre los elementos */
+    text-align: center; /* Centra el contenido dentro de cada li */
+    list-style: none;
+    box-sizing: border-box;
 }
 
 .grid figure {
@@ -59,12 +63,16 @@
 }
 
 .grid li:hover figure {
+	opacity: 0.7;
+}
+
+.grid li:hover figure {
 	opacity: 1;
 }
 
 .grid figcaption {
-	//background: #e4e4e4;
-	//padding: 25px;
+	/*background: #e4e4e4;
+	padding: 25px;*/
 }
 
 /* Slideshow style */
@@ -147,19 +155,19 @@
 }
 
 .slideshow figure {
-    width: 100%;
-    height: 100%;
-    /* background: #fff; */
-    border: 5px solid black;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	width: 100%;
+	height: 100%;
+	/* background: #fff; */
+	border: 5px solid black;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .slideshow figcaption {
-	//padding-bottom: 20px;*/
+	/* padding-bottom: 20px; */
 }
 
 .slideshow figcaption h3 {
@@ -288,7 +296,6 @@ span.nav-close:before {
 	.info-keys {
 		display: none;
 	}
-
 }
 
 @media screen and (max-width: 35em) {
